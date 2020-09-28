@@ -48,4 +48,14 @@ public class Fatura {
     public double totalFaturado() {
         return preco * quantidade;
     }
+
+    @Override
+    public String toString() {
+        return "Fatura{" +
+                "codigo='" + codigo + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", quantidade=" + quantidade +
+                ", preco=" + preco +
+                '}';
+    }
 }
